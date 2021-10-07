@@ -1,0 +1,62 @@
+{
+    "paths": [
+        {
+            "name": "/login",
+            "lambdaFunction": "KudosFunction",
+            "privacy": {
+                "open": true
+            }
+        },
+        {
+            "name": "/register",
+            "lambdaFunction": "KudosFunction",
+            "privacy": {
+                "open": true
+            }
+        },
+        {
+            "name": "/general",
+            "lambdaFunction": "KudosFunction",
+            "privacy": {
+                "open": true
+            }
+        },
+        {
+            "name": "/addwebsite",
+            "lambdaFunction": "KudosFunction",
+            "privacy": {
+                "open": true
+            }
+        },
+        {
+            "name": "/webhooks",
+            "lambdaFunction": "KudosFunction",
+            "privacy": {
+                "open": true
+            }
+        }
+    ],
+    "resourceName": "kudosAPI",
+    "apiName": "kudosAPI",
+    "functionArns": [
+        {
+            "lambdaFunction": "KudosFunction"
+        }
+    ],
+    "privacy": {
+        "auth": 0,
+        "unauth": 0,
+        "authRoleName": "amplify-awsamplify-dev-172404-authRole",
+        "unAuthRoleName": "amplify-awsamplify-dev-172404-unauthRole"
+    },
+    "dependsOn": [
+        {
+            "category": "function",
+            "resourceName": "KudosFunction",
+            "attributes": [
+                "Name",
+                "Arn"
+            ]
+        }
+    ]
+}

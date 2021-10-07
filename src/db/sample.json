@@ -1,0 +1,157 @@
+[
+  {"general":
+    {
+    "companies":[
+        {
+          "id" :"1",
+          "code" :"BRH",
+          "name": "BrandHabit",
+          "type" :"1",
+          "tw_companyID": "int",
+          "feature_access": "1"
+        },
+        {
+          "id" :"2",
+          "code" :"BRH",
+          "name": "BrandHabit",
+          "type" :"1",
+          "tw_companyID": "int",
+          "feature_access": "1"
+        }
+      ],
+    "company_type": [
+      {
+        "id": "1",
+        "name" :"Agency"
+      }
+    ],
+    "feature_access":[
+      {
+        "id": "1",
+        "dateUpdated" :"29-06-2020",
+        "isActive": true,
+        "featureID":"1"
+      }
+    ],
+    "features" :[
+      {
+        "id" :"1",
+        "name" :"feature",
+        "description" :"description",
+        "dateAdded": "29-06-2020"
+      }
+    ]
+    }
+  },
+  {"users_list":
+  {
+    "users":
+    [
+      {
+      "company_id":"1",
+      "projects":["1","2","3"],
+      "id":" 1",
+      "firstName" :"admin",
+      "lastName" :"admin",
+      "type":"agency"
+    },
+    {
+      "company_id":"1",
+      "projects":["1","2","3"],
+      "id":" 2",
+      "firstName" :"admin",
+      "lastName" :"admin",
+      "type":"agency"
+    }
+  ]}
+  },
+  {
+    "userProjects": {
+      "projects": [
+        {
+          "id": "1",
+          "tw_projectID": "496600",
+          "name": "thisisbrandhabit.com",
+          "companyID": "1",
+          "type": "1",
+          "status": "active",
+          "propertyID": "1"
+        },
+        {
+          "id": "2",
+          "tw_projectID": "496600",
+          "name": "thisisbrandhabit.com",
+          "companyID": "1",
+          "type": "1",
+          "status": "active",
+          "propertyID": "1"
+        }
+      ],
+      "project_type": [
+        {
+          "id": "1",
+          "name": "agency"
+        }
+      ]
+    }
+  },
+  {
+    "property_details":{
+      "properties": [
+        {
+          "id": "1",
+          "name": "property",
+          "url": "#",
+          "companyID": "1"
+        }
+      ],
+      "property_credentials": [
+        {
+          "id": "1",
+          "propertyID": "1",
+          "name": "credential",
+          "login": "admin",
+          "pass": "admin",
+          "lastUpdated": "29-06-2020",
+          "status": "active"
+        }
+      ]
+    }
+  },
+  {
+    "support":
+    {
+      "supportbin": [
+        {
+          "id" :"1",
+          "tw_tasklistID": "1",
+          "companyID": "1",
+          "propertyID": "1"
+        }
+      ],
+      "supportbin_batches": [
+        {
+          "id":" 1",
+          "supportbinID":" 1",
+          "tw_taskID":" 1",
+          "name":" batche",
+          "dateSubmitted":" 29-06-2020",
+          "dateUpdated":" 29-06-2020",
+          "status":"active"
+        }
+      ],
+      "supportbin_batch_items": [
+        {
+          "id":" 1",
+          "supportbin_batchID":" 1",
+          "tw_taskID":" 1",
+          "name":" items",
+          "status":" active",
+          "estimate":" 2",
+          "costph":" decimal"
+
+        }
+      ]
+    }
+  }
+]

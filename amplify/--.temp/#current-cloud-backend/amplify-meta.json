@@ -1,0 +1,64 @@
+{
+	"providers": {
+		"awscloudformation": {
+			"AuthRoleName": "amplify-awsamplify-dev-172404-authRole",
+			"UnauthRoleArn": "arn:aws:iam::858097969640:role/amplify-awsamplify-dev-172404-unauthRole",
+			"AuthRoleArn": "arn:aws:iam::858097969640:role/amplify-awsamplify-dev-172404-authRole",
+			"Region": "us-east-1",
+			"DeploymentBucketName": "amplify-awsamplify-dev-172404-deployment",
+			"UnauthRoleName": "amplify-awsamplify-dev-172404-unauthRole",
+			"StackName": "amplify-awsamplify-dev-172404",
+			"StackId": "arn:aws:cloudformation:us-east-1:858097969640:stack/amplify-awsamplify-dev-172404/91dd58b0-d25f-11ea-98f2-0a5cf73de175",
+			"AmplifyAppId": "d2h6sdayg5gcd8"
+		}
+	},
+	"function": {
+		"KudosFunction": {
+			"build": true,
+			"providerPlugin": "awscloudformation",
+			"service": "Lambda",
+			"lastBuildTimeStamp": "2020-10-27T08:17:31.056Z",
+			"lastPackageTimeStamp": "2020-10-27T08:17:43.446Z",
+			"distZipFilename": "KudosFunction-6a69466b695a6f51664b-build.zip",
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-awsamplify-dev-172404-deployment/amplify-cfn-templates/function/KudosFunction-cloudformation-template.json",
+				"logicalId": "functionKudosFunction"
+			},
+			"lastPushTimeStamp": "2020-10-27T08:19:43.009Z",
+			"output": {
+				"Region": "us-east-1",
+				"Arn": "arn:aws:lambda:us-east-1:858097969640:function:KudosFunction-dev",
+				"Name": "KudosFunction-dev",
+				"LambdaExecutionRole": "awsamplifyLambdaRole48f0ceaf-dev"
+			},
+			"lastPushDirHash": "nHHrEBDQT6rr2OeCK0QJ8uZ5O54="
+		}
+	},
+	"api": {
+		"kudosAPI": {
+			"service": "API Gateway",
+			"providerPlugin": "awscloudformation",
+			"dependsOn": [
+				{
+					"category": "function",
+					"resourceName": "KudosFunction",
+					"attributes": [
+						"Name",
+						"Arn"
+					]
+				}
+			],
+			"providerMetadata": {
+				"s3TemplateURL": "https://s3.amazonaws.com/amplify-awsamplify-dev-172404-deployment/amplify-cfn-templates/api/kudosAPI-cloudformation-template.json",
+				"logicalId": "apikudosAPI"
+			},
+			"lastPushTimeStamp": "2020-10-27T08:19:42.994Z",
+			"output": {
+				"ApiName": "kudosAPI",
+				"RootUrl": "https://i8aty10qw7.execute-api.us-east-1.amazonaws.com/dev",
+				"ApiId": "i8aty10qw7"
+			},
+			"lastPushDirHash": "eSsx5nsrdullgiLQ6LMutO1rk5o="
+		}
+	}
+}
